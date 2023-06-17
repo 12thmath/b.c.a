@@ -1,0 +1,145 @@
+<html>
+<head>
+<title> programe 7 </title>
+<script type="text/javascript">
+function linksem1()
+{
+var pe=document.frm.peno.value;
+
+if(pe==1)
+document.write("<a link href=p1-1.html>Programe - 1</a>");
+else if(pe==2)
+document.write("<a link href=p1-2.html>Programe - 2</a>");
+else if(pe==3)
+document.write("<a link href=p1-3.html>Programe - 3</a>");
+else if(pe==4)
+document.write("<a link href=p1-4.html>Programe - 4</a>");
+else if(pe==5)
+document.write("<a link href=p1-5.html>Programe - 5</a>");
+else if(pe==6)
+document.write("<a link href=p1-6.html>Programe - 6</a>");
+else if(pe==7)
+document.write("<a link href=p1-7.html>Programe - 7</a>");
+else if(pe==8)
+document.write("<a link href=p1-8.html>Programe - 8</a>");
+else if(pe==9)
+document.write("<a link href=p1-9.html>Programe - 9</a>");
+else if(pe==10)
+document.write("<a link href=p1-10.html>Programe - 10</a>");
+else if(pe==11)
+document.write("<a link href=p1-11.html>Programe - 11</a>");
+else if(pe==12)
+document.write("<a link href=p1-12.html>Programe - 12</a>");
+else if(pe==13)
+document.write("<a link href=p1-13.html>Programe - 13</a>");
+else if(pe==14)
+document.write("<a link href=p1-14.html>Programe - 14</a>");
+else if(pe==15)
+document.write("<a link href=p1-15.html>Programe - 15</a>");
+else if(pe==16)
+document.write("<a link href=p1-16.html>Programe - 16</a>");
+else if(pe==17)
+document.write("<a link href=p1-17.html>Programe - 17</a>");
+else if(pe==18)
+document.write("<a link href=p1-18.html>Programe - 18</a>");
+else if(pe==19)
+document.write("<a link href=p1-19.html>Programe - 19</a>");
+else if(pe==20)
+document.write("<a link href=p1-20.html>Programe - 20</a>");
+else if(pe==21)
+document.write("<a link href=p1-21.html>Programe - 21</a>");
+else
+document.write("Not Avliable!! So Sorry.");
+}
+
+</script>
+</head>
+<body>
+<font size=4>
+Programe - 7.write a programe to read student roll number,name and marks of three subjects.<br>
+calculate total,percentage,result and class  according to follwing criteria:-<br><br>
+	void main()<br>
+{<br>
+	int rno,m1,m2,m3,total,flag=0;<br>
+	float per;<br>
+	char name[20],result[20],cls[20];<br><br>
+	
+printf("\n enter student name:");<br>
+
+gets(name);<br>
+printf("\n enter student roll no:");<br>
+scanf("%d",&rno);<br>
+printf("\n enter marks of subject1:");<br>
+scanf("%d",&m1);<br>
+printf("\n enter marks of subject2:");<br>
+scanf("%d",&m2);<br>
+printf("\n enter marks of subject3:");<br>
+scanf("%d",&m3);<br>
+	if(m1<40)<br>
+	{<br>
+	flag=flag+1;<br>
+	}<br>
+	if(m2<40)<br>
+	{<br>
+	flag=flag+1;<br>
+	}<br>
+	if(m3<40)<br>
+	{<br>
+	flag=flag+1;<br>
+	}<br>
+if(flag==1||flag==2)<br>
+	{<br>
+	strcpy(result,"ATKT");<br>
+	strcpy(cls,"****");<br>
+	total=0;<br>
+	per=0;<br>
+	}<br>
+	else if (flag>2)<br>
+	{<br>
+	strcpy(result,"fail");<br>
+	strcpy(cls,"****");<br>
+	total=0;<br>
+	per=0;<br>
+	}<br>
+	else<br>
+	{<br>
+		total=m1+m2+m3;<br>
+		per=total/3.0;<br>
+		strcpy(result,"pass");<br>
+		if(per>=70)<br>
+	{<br>
+		strcpy(cls,"DISTICTION");<br>
+	}<br>
+	else if(per>=60)<br>
+	{<br>
+		strcpy(cls,"first");<br>
+	}<br>
+	else if (per>=50)<br>
+	{<br>
+		strcpy(cls,"secound");<br>
+	}<br>
+	else if(per>=40)<br>
+	{<br>
+		strcpy(cls,"pass");<br>
+	}<br>
+}<br><br>
+printf("\n\t marksheet");<br>
+printf("\n=================================================================");<br>
+printf("\n roll number::%d",rno);<br>
+printf("\n name::%s",name);<br>
+printf("\n mark of subject1::%d",m1);<br>
+printf("\n mark of subject2::%d",m2);<br>
+printf("\n mark of subject3::%d",m3);<br>
+printf("\n total ::%d",total);<br>
+printf("\n percentage::%.2f",per);<br>
+printf("\n result::%s",result);<br>
+printf("\n class::%s",cls);<br>
+printf("\n=================================================================");<br>
+}<br><br>
+<form name=frm>
+Search Programe Number : <input type=text size=5 name=peno><br>
+<input type=button onClick=linksem1() value="Get Your Programe" size=15>
+</form>
+</font>
+</body>
+</html>
